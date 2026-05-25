@@ -1,5 +1,5 @@
 import './Banner.css';
-import miFoto from '../../assets/Ramirez.jpeg';
+import Ramirez from '../../assets/Ramirez.jpeg';
 const Banner = () => {
     return (
         <section className="hero-section">
@@ -11,20 +11,18 @@ const Banner = () => {
                 </div>
                 {/* 2. Foto de Perfil Circular */}
                 <div className="profile-photo-container">
-                    {/* Reemplazar src con {miFoto} cuando importen su imagen local
-
-*/}
+                    {/* Reemplazar src con {miFoto} cuando importen su imagen local*/}
 
                     <img
-                        src={Ramirez.jpeg}
+                        src={Ramirez}
                         alt="Foto de Perfil"
                         className="profile-photo"
                     />
                 </div>
                 {/* 3. Título Principal */}
                 <h1 className="hero-title">
-                    Aileen Chavez <br />
-                    <span className="text-cyan">Ramirez</span>
+                    Aileen <br />
+                    <span className="text-cyan"> Chavez Ramirez</span>
                 </h1>
                 {/* 4. Subtítulo (Rol) */}
                 <h2 className="hero-subtitle">
@@ -49,8 +47,7 @@ const Banner = () => {
 
                         Proyectos</a>
 
-                    <a href="#contacto" className="btn btn-
-secondary">Contáctame</a>
+                    <a href="#contacto" className="btn btn-secondary">Contáctame</a>
 
                 </div>
             </div>
