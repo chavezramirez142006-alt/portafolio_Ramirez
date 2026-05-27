@@ -1,57 +1,118 @@
 /* =========================================
-CONTENEDOR PRINCIPAL (Ocupa toda la pantalla)
+ROOT
 ========================================= */
+
+:root {
+
+    /* FONDOS */
+    --hero-bg-start: #050e04;
+    --hero-bg-end: #0e2e13;
+
+    /* TEXTOS */
+    --hero-text-main: #ffffff;
+    --hero-text-secondary: #ffffff;
+    --hero-subtitle: #00ffff;
+
+    /* ACENTO */
+    --hero-accent: #00ff2a;
+
+    /* STATUS */
+    --hero-status-bg: rgba(255, 255, 255, 0.03);
+    --hero-status-border: rgba(255, 255, 255, 0.1);
+    --hero-status-text: #a0aab2;
+
+    /* FOTO */
+    --hero-profile-border: rgba(43, 255, 0, 0.8);
+    --hero-profile-shadow: rgba(21, 255, 0, 0.8);
+
+    /* BOTÓN PRIMARY */
+    --hero-btn-primary-bg: #78ff5d;
+    --hero-btn-primary-text: #0b0f19;
+
+    /* BOTÓN SECONDARY */
+    --hero-btn-secondary-bg: transparent;
+    --hero-btn-secondary-text: #ffffff;
+    --hero-btn-secondary-border: rgba(255, 255, 255, 0.15);
+    --hero-btn-secondary-hover: rgba(255, 255, 255, 0.05);
+
+    /* TRANSICIÓN */
+    --hero-transition: 0.3s ease;
+}
+
+/* =========================================
+CONTENEDOR PRINCIPAL
+========================================= */
+
 .hero-section {
     min-height: calc(100vh - 80px);
-    /* 100vh menos la altura aproximada del
-    navbar */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(circle at center, #111a2e 0%, #0b0f19 70%);
-    color: #ffffff;
+
+    background: radial-gradient(
+        circle at center,
+        var(--hero-bg-start) 0%,
+        var(--hero-bg-end) 70%
+    );
+
+    color: var(--hero-text-main);
+
     padding: 2rem 5%;
+
     position: relative;
 }
 
 .hero-content {
     max-width: 800px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
     text-align: center;
 }
 
 /* =========================================
-    ETIQUETA DE ESTADO (BADGE)
-    ========================================= */
+STATUS BADGE
+========================================= */
+
 .status-badge {
     display: flex;
     align-items: center;
     gap: 8px;
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    background-color: var(--hero-status-bg);
+
+    border: 1px solid var(--hero-status-border);
+
     padding: 0.5rem 1rem;
+
     border-radius: 20px;
+
     font-size: 0.85rem;
-    color: #a0aab2;
+
+    color: var(--hero-status-text);
+
     margin-bottom: 2rem;
 }
 
 .status-dot {
     width: 8px;
     height: 8px;
-    background-color: #00d8ff;
-    /* Cyan */
+
+    background-color: var(--hero-accent);
+
     border-radius: 50%;
-    box-shadow: 0 0 8px #00d8ff;
-    /* Efecto de brillo */
+
+    box-shadow: 0 0 8px var(--hero-accent);
 }
 
 /* =========================================
-    FOTO DE PERFIL CIRCULAR
-    ========================================= */
+FOTO PERFIL
+========================================= */
+
 .profile-photo-container {
     margin-bottom: 1.5rem;
 }
@@ -59,48 +120,60 @@ CONTENEDOR PRINCIPAL (Ocupa toda la pantalla)
 .profile-photo {
     width: 160px;
     height: 160px;
+
     object-fit: cover;
-    /* Evita que la foto se estire si no es cuadrada */
+
     border-radius: 50%;
-    /* Hace que sea un círculo perfecto */
-    border: 6px solid rgba(5, 163, 215, 0.8);
-    /* Borde sutil cyan */
-    box-shadow: 0 0 20px rgba(5, 163, 215, 0.8);
-    /* Sombra brillante */
+
+    border: 6px solid var(--hero-profile-border);
+
+    box-shadow: 0 0 20px var(--hero-profile-shadow);
 }
 
 /* =========================================
-    TIPOGRAFÍA (Títulos y Descripción)
-    ========================================= */
+TIPOGRAFÍA
+========================================= */
+
 .hero-title {
+    
     font-size: 4rem;
     font-weight: 700;
+
     line-height: 1.1;
+
     margin-bottom: 1.5rem;
 }
 
-.text-cyan {
-    color: #00d8ff;
+.hero-name {
+    color: var(--hero-accent);
 }
 
 .hero-subtitle {
     font-size: 1.1rem;
-    color: #00d8ff;
+
+    color: var(--hero-subtitle);
+
     font-weight: 500;
+
     margin-bottom: 1.5rem;
 }
 
 .hero-description {
     font-size: 1.1rem;
-    color: #8b95a1;
+
+    color: var(--hero-text-secondary);
+
     line-height: 1.6;
+
     margin-bottom: 2.5rem;
+
     max-width: 700px;
 }
 
 /* =========================================
-BOTONES
+BOTONES (CORREGIDOS COMO EL ORIGINAL)
 ========================================= */
+
 .hero-buttons {
     display: flex;
     gap: 1rem;
@@ -108,45 +181,68 @@ BOTONES
 
 .btn {
     padding: 0.8rem 2rem;
+
     border-radius: 8px;
+
     font-size: 1rem;
     font-weight: 600;
+
     text-decoration: none;
-    transition: all 0.3s ease;
+
+    transition: all var(--hero-transition);
+
     cursor: pointer;
 }
 
+/* BOTÓN PRINCIPAL */
+
 .btn-primary {
-    background-color: #00d8ff;
-    color: #0b0f19;
-    border: 2px solid #00d8ff;
+    background-color: var(--hero-btn-primary-bg);
+
+    color: var(--hero-btn-primary-text);
+
+    border: 2px solid var(--hero-btn-primary-bg);
 }
 
 .btn-primary:hover {
     background-color: transparent;
-    color: #00d8ff;
+
+    color: var(--hero-btn-primary-bg);
 }
 
+/* BOTÓN SECUNDARIO */
+
 .btn-secondary {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background-color: var(--hero-btn-secondary-bg);
+
+    color: var(--hero-btn-secondary-text);
+
+    border: 1px solid var(--hero-btn-secondary-border);
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: var(--hero-btn-secondary-hover);
 }
 
 /* =========================================
-ANIMACIÓN DE LA FLECHA (Opcional)
+SCROLL INDICATOR
 ========================================= */
+
 .scroll-indicator {
     position: absolute;
+
     bottom: 2rem;
-    color: #8b95a1;
+
+    color: var(--hero-text-secondary);
+
     font-size: 1.5rem;
+
     animation: bounce 2s infinite;
 }
+
+/* =========================================
+ANIMACIÓN
+========================================= */
 
 @keyframes bounce {
 
@@ -168,9 +264,11 @@ ANIMACIÓN DE LA FLECHA (Opcional)
 }
 
 /* =========================================
-RESPONSIVIDAD (Móviles)
+RESPONSIVE
 ========================================= */
+
 @media (max-width: 768px) {
+
     .hero-title {
         font-size: 2.8rem;
     }
@@ -188,7 +286,6 @@ RESPONSIVIDAD (Móviles)
         height: 110px;
     }
 
-    /* En móviles, los botones se apilan uno debajo del otro */
     .hero-buttons {
         flex-direction: column;
         width: 100%;

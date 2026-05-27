@@ -6,9 +6,10 @@ import Habilidades from './components/Habilidades/Habilidades';
 import Proyectos from './components/Proyectos/Proyectos';
 import Contacto from './components/Contactos/Contactos';
 import Servicios from './components/Servicios/Servicios';
+import Certificados from './components/Certificados/Certificados';
 import './App.css';
 import './index.css';
-import Certificados from './components/Certificados/Certificados';
+
 
 
 

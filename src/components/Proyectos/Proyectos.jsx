@@ -1,6 +1,8 @@
 import './Proyectos.css';
 import cafe from '../../assets/cafe.png';
 import citas from '../../assets/citas.png';
+import login from '../../assets/LOGIN.png';
+import contacto from '../../assets/contacto.png';
 const Proyectos = () => {
     // Arreglo de proyectos (Simulando una base de datos o API)
     const proyectosData = [
@@ -20,21 +22,17 @@ const Proyectos = () => {
         },
         {
             id: 3,
-
-            imagen: "https://intikisa.pe/wp-content/ uploads / 2024 /08 / Productos_en_polvo1.png.webp",
-            titulo: "Aplicación Web de venta de productos naturales",
-            descripcion: "Aplicación web para la venta de productos naturalesonline.", tecnologias: ["React", "Laravel", "PostGreSQL"],
-            linkDemo: "https://intikisa.pe",
-            linkCodigo: "#"
+            imagen: login,
+            titulo: "Login", descripcion: "INICIO DE SESIÓN", tecnologias: ["HTML5", "CSS3", "JavaScript",  "PHP", "MySQL"],
+            linkDemo: "https://matricula-se.infinityfreeapp.com/",
+            linkCodigo: "https://github.com/johan-vega/entregableGrupo3"
         },
         {
             id: 4,
-
-            imagen: "https://liora.io/app/uploads/sites/7/2020/10/power-bi-logo-1.jpg",
-            titulo: "Dashboard Interactivo en Power BI",
-            descripcion: "Construcción de un Panel BI Interactivo.",
-            tecnologias: ["Power BI", "DAX", "Power Query", "Modelado dedatos", "Power BI Service", "SharePoint"], linkDemo: "#",
-            linkCodigo: "#"
+            imagen: contacto,
+            titulo: "Contacto", descripcion: "Sistema de contacto", tecnologias: ["HTML5", "CSS3", "JavaScript",  "PHP", "MySQL"],
+            linkDemo: "https://formulario-r.infinityfreeapp.com/",
+            linkCodigo: "https://github.com/johan-vega/entregableGrupo3"
         }
     ];
     return (

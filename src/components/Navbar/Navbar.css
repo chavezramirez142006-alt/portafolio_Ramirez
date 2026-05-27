@@ -1,98 +1,125 @@
 /* =========================================
-ESTILOS GENERALES DEL NAVBAR
+NAVBAR.CSS
 ========================================= */
+
+:root {
+
+    --navbar-bg: #111944;
+    --navbar-texto: #ffffff;
+    --navbar-texto-secundario: #a0aab2;
+    --navbar-acento: #1eff00;
+
+    --navbar-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --navbar-shadow-mobile: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+    --navbar-transition: 0.3s ease;
+
+    --navbar-padding: 1.5rem 5%;
+    --navbar-logo-size: 1.9rem;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
-    background-color: #0b0f19;
-    /* Fondo oscuro elegante */
-    color: #ffffff;
+
+    padding: var(--navbar-padding);
+
+    background-color: var(--navbar-bg);
+    color: var(--navbar-texto);
+
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    box-shadow: var(--navbar-shadow);
 }
 
-/* =========================================
-    ESTILOS DEL LOGO
-    ========================================= */
+.navbar-logo-img {
+    width: 200px;
+    height: 100px;
+}
+
 .navbar-logo {
-    font-size: 1.8rem;
+    color: var(--navbar-acento);
+
+    font-size: var(--navbar-logo-size);
     font-weight: 700;
+
     cursor: pointer;
+
     letter-spacing: 1px;
 }
 
-.text-cyan {
-    color: #00d8ff;
-    /* Color de acento (Cyan) */
-}
-
-/* =========================================
-    ESTILOS DE LOS ENLACES (DESKTOP)
-    ========================================= */
 .navbar-links {
     display: flex;
     gap: 2.5rem;
 }
 
 .navbar-links a {
-    color: #a0aab2;
+    color: var(--navbar-texto-secundario);
+
     text-decoration: none;
+
     font-size: 1rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+
+    transition: color var(--navbar-transition);
 }
 
 .navbar-links a:hover {
-    color: #ffffff;
+    color: var(--navbar-acento);
 }
 
-/* =========================================
-    BOTÓN HAMBURGUESA (Oculto en PC)
-    ========================================= */
 .navbar-toggle {
     display: none;
+
     flex-direction: column;
+
     cursor: pointer;
+
     gap: 6px;
 }
 
 .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+
+    background-color: var(--navbar-acento);
+
     border-radius: 2px;
-    transition: all 0.3s ease;
+
+    transition: all var(--navbar-transition);
 }
 
-/* =========================================
-    MEDIA QUERY: VERSIÓN MÓVIL Y TABLET
-    ========================================= */
 @media (max-width: 768px) {
+
     .navbar-toggle {
         display: flex;
-        /* Mostramos el botón hamburguesa */
     }
 
     .navbar-links {
         display: none;
-        /* Ocultamos los enlaces horizontales */
+
         flex-direction: column;
+
         position: absolute;
         top: 100%;
         left: 0;
+
         width: 100%;
-        background-color: #0b0f19;
+
+        background-color: var(--navbar-bg);
+
         padding: 2rem 0;
+
         text-align: center;
+
         gap: 2rem;
-        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+
+        box-shadow: var(--navbar-shadow-mobile);
     }
 
-    /* Cuando el estado isOpen es true, se añade la clase "open" */
     .navbar-links.open {
         display: flex;
     }

@@ -21,20 +21,11 @@ const Perfil = () => {
                             <h3>Perfil profesional</h3>
                         </div>
                         <p className="card-text">
-                            Ingeniero de Sistemas Comptacionales, con experiencia en la
-                            docencia de más de 15 años, dictando clases de forma presencial y virtual
-                            en diferentes instituciones educativas de prestigio y con experiencia
-                            profesional de más de 11 años.
+                            Soy estudiante de Informática y Desarrollo de Aplicaciones Web en SENATI, actualmente cursando el tercer ciclo de mi formación profesional. Tengo 19 años y me apasiona el desarrollo web y la tecnología, buscando constantemente mejorar mis habilidades y adquirir nuevos conocimientos.
                             <br /><br />
-                            Cuento la Certificación Internacional en Microsoft Office
-                            Specialist (MOS) Excel Expert y PL - 300 Data Analyst Associate.
-                            Instructor CISCO y ORACLE.
+                            Cuento con conocimientos en HTML, CSS, React y Laravel, incluyendo la conexión y manejo de bases de datos en proyectos desarrollados con Laravel. Además, tengo experiencia utilizando HeidiSQL para la administración de bases de datos y desarrollo de consultas.
                             <br /><br />
-                            Consultoría y experiencia en desarrollo de software,
-                            utilizando tecnologías como React, Laravel, NodeJS, ExpressJS, MySQL,
-                            PostGreSQL, etc. y en desarrollo de dashboards interactivos mediante
-                            Power BI, DAX, Power Query, modelado de datos en SQL y automatizaciones
-                            con Python.
+                            Actualmente continúo fortaleciendo mis conocimientos en JavaScript y PHP para convertirme en un desarrollador full stack más sólido y profesional. Me considero una persona responsable, autodidacta y con muchas ganas de seguir creciendo en el mundo del desarrollo de software.
                         </p>
                     </div>
                     {/* =====================================TARJETA 2: EDUCACIÓN====================================== */}
@@ -52,46 +43,63 @@ const Perfil = () => {
                             <h3>Educación</h3>
                         </div>
                         <div className="timeline">
-                            {/* Ítem de Educación 1 */}
+
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Ingeniería de Sistemas Computacionales</h4>
-                                    <span className="badge badge-outline">Titulado</span>
+                                    <h4>Informática y Desarrollo de Aplicaciones Web</h4>
+                                    <span className="badge badge-outline">En Curso</span>
                                 </div>
-                                <span className="timeline-date">UNIVERSIDAD TECNOLÓGICA
 
-                                    DEL PERÚ</span>
+                                <p className="timeline-date">
+                                    SENATI • 2024 - Actualidad
+                                </p>
                             </div>
-                            {/* Ítem de Educación 2 */}
+
                             <div className="timeline-item">
                                 <div className="timeline-header">
-                                    <h4>Computación e Informática</h4>
-                                    <span className="badge badge-outline">Titulado</span>
+                                    <h4>Desarrollo Frontend con React</h4>
+                                    <span className="badge badge-solid">React</span>
                                 </div>
-                                <span className="timeline-date">I.S.T CESCA</span>
-                            </div>
-                            {/* Ítem de Educación 3 */}
-                            <div className="timeline-item">
-                                <div className="timeline-header"></div>
-                                <h4>MOS Excel Expert</h4>
-                                <span className="badge badge-outline">Certificación
 
-                                    Internacional</span>
+                                <p className="timeline-date">
+                                    HTML, CSS, JavaScript, React
+                                </p>
                             </div>
-                            <span className="timeline-date">MICROSOFT</span>
+
+                            <div className="timeline-item">
+                                <div className="timeline-header">
+                                    <h4>Desarrollo Backend con Laravel</h4>
+                                    <span className="badge badge-solid">Laravel</span>
+                                </div>
+
+                                <p className="timeline-date">
+                                    PHP, Laravel, MySQL, HeidiSQL
+                                </p>
+                            </div>
+
+                            <div className="timeline-item">
+                                <div className="timeline-header">
+                                    <h4>Base de Datos y Gestión SQL</h4>
+                                    <span className="badge badge-outline">SQL</span>
+                                </div>
+
+                                <p className="timeline-date">
+                                    MySQL, HeidiSQL y conexión de bases de datos
+                                </p>
+                            </div>
+
                         </div>
                         {/* Ítem de Educación 4 */}
                         <div className="timeline-item">
                             <div className="timeline-header">
-                                <h4>Power BI Data Analyst Associate - PL - 300</h4>
-                                <span className="badge badge-outline">Certificación Internacional</span>
+                                
                             </div>
-                            <span className="timeline-date">MICROSOFT</span>
+                            
                         </div>
                     </div>
                 </div>
             </div>
-        
+
         </section >
     );
 };

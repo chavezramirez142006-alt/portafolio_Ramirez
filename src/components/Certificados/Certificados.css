@@ -1,10 +1,35 @@
 /* =========================================
+ROOT
+========================================= */
+
+:root {
+
+    --cert-bg: #050e04;
+    --cert-card: #111a2e;
+
+    --cert-text-main: #ffffff;
+    --cert-text-secondary: #8b95a1;
+
+    --cert-accent: #00d8ff;
+    --cert-success: #6ee7b7;
+
+    --cert-border: rgba(255, 255, 255, 0.05);
+    --cert-hover-border: rgba(0, 216, 255, 0.3);
+
+    --cert-badge-border: rgba(110, 231, 183, 0.4);
+
+    --cert-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    --cert-transition: 0.3s ease;
+}
+
+/* =========================================
 SECCIÓN
 ========================================= */
 
 .certificados-section {
     padding: 5rem 5%;
-    background-color: #0b0f19;
+    background-color: var(--cert-bg);
     display: flex;
     justify-content: center;
 }
@@ -33,17 +58,17 @@ CARD
 ========================================= */
 
 .certificado-card {
-    background-color: #111a2e;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: var(--cert-card);
+    border: 1px solid var(--cert-border);
     border-radius: 12px;
     padding: 2rem;
-    transition: 0.3s ease;
+    transition: var(--cert-transition);
 }
 
 .certificado-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(0, 216, 255, 0.3);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    border-color: var(--cert-hover-border);
+    box-shadow: var(--cert-shadow);
 }
 
 /* =========================================
@@ -62,7 +87,7 @@ HEADER
 }
 
 .text-cyan {
-    color: #00d8ff;
+    color: var(--cert-accent);
 }
 
 /* =========================================
@@ -70,8 +95,8 @@ BADGE
 ========================================= */
 
 .certificado-badge {
-    color: #6ee7b7;
-    border: 1px solid rgba(110, 231, 183, 0.4);
+    color: var(--cert-success);
+    border: 1px solid var(--cert-badge-border);
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.75rem;
@@ -83,19 +108,19 @@ TEXTOS
 ========================================= */
 
 .certificado-title {
-    color: white;
+    color: var(--cert-text-main);
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
 .certificado-desc {
-    color: #8b95a1;
+    color: var(--cert-text-secondary);
     line-height: 1.6;
     margin-bottom: 1.5rem;
 }
 
 .certificado-level {
-    color: #6ee7b7;
+    color: var(--cert-success);
     font-weight: 600;
 }
 
@@ -111,13 +136,19 @@ BOTÓN
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: #00d8ff;
-    color: #0b0f19;
+
+    background-color: var(--cert-accent);
+    color: var(--cert-bg);
+
     padding: 0.8rem 1.2rem;
+
     border-radius: 8px;
+
     text-decoration: none;
+
     font-weight: 700;
-    transition: 0.3s ease;
+
+    transition: var(--cert-transition);
 }
 
 .btn-certificado:hover {

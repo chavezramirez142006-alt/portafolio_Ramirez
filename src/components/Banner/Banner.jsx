@@ -2,8 +2,8 @@ import './Banner.css';
 import Ramirez from '../../assets/Ramirez.jpeg';
 const Banner = () => {
     return (
-        <section className="hero-section">
-            <div className="hero-content">
+        <section id="home" className="hero-section">
+            <div  className="hero-content">
                 {/* 1. Etiqueta de Estado (Badge) */}
                 <div className="status-badge">
                     <span className="status-dot"></span>
@@ -11,8 +11,8 @@ const Banner = () => {
                 </div>
                 {/* 2. Foto de Perfil Circular */}
                 <div className="profile-photo-container">
-                    {/* Reemplazar src con {miFoto} cuando importen su imagen local*/}
-
+                    
+                    {/* en src poner mombre de la imagen */}
                     <img
                         src={Ramirez}
                         alt="Foto de Perfil"
@@ -22,24 +22,16 @@ const Banner = () => {
                 {/* 3. Título Principal */}
                 <h1 className="hero-title">
                     Aileen <br />
-                    <span className="text-cyan"> Chavez Ramirez</span>
+                    <span className="hero-name">Chavez Ramirez</span>
                 </h1>
                 {/* 4. Subtítulo (Rol) */}
                 <h2 className="hero-subtitle">
-                    Consultor e Instructor BI - Software | MOS Excel Expert | Power
+                    Informatica y Desarrollo de aplicaciones web 
 
-                    BI Data Analyst | Ingeniero de Sistemas
                 </h2>
                 {/* 5. Descripción */}
                 <p className="hero-description">
-                    Construyo sistemas inteligentes que automatizan procesos,
-
-                    analizan
-
-                    datos y transforman la información. También desarrollo
-                    aplicaciones web funcionales para resolver necesidades reales.
-
-                    Consultoría de Software y BI para empresas.
+                    Construyo paginas web modernas y funcionales con React, HTML, CSS y JavaScript. Me apasiona crear experiencias digitales atractivas y eficientes. ¡Vamos a construir algo increíble juntos!
                 </p>
                 {/* 6. Botones de Acción */}
                 <div className="hero-buttons">

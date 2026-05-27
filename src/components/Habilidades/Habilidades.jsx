@@ -5,14 +5,7 @@ const Habilidades = () => {
 */
 
     const skillsData = [
-        {
-            id: 1,
-            titulo: "Power BI",
-            descripcion: "DAX, Data Modeling, Power Query, Governance.",
-            nivel: "Avanzado",
-            botonTexto: "VER CERTIFICADO",
-            estado: "completado" // Usaremos esto para cambiar los colores
-        },
+        
         {
             id: 2,
             titulo: "SQL Server / MySQL / PostGreSQL / Oracle",
@@ -77,21 +70,6 @@ const Habilidades = () => {
             id: 10,
             titulo: "JavaScript",
             descripcion: " Lenguaje de programación interpretado, dialecto delestándar ECMAScript.",nivel: "Aprendizaje Activo",
-            botonTexto: "VER CERTIFICADO",
-            estado: "completado"
-        },
-        {
-            id: 11,
-            titulo: "Grid",
-            descripcion: "Contrucción de rejillas responsivas.",
-            nivel: "Aprendizaje Activo",
-            botonTexto: "VER CERTIFICADO",
-            estado: "completado"
-        },
-        {
-            id: 12,
-            titulo: "Flexbox",
-            descripcion: "Método de diseño de página unidimensional paracompaginar elementos en filas o columnas.",nivel: "Aprendizaje Activo",
             botonTexto: "VER CERTIFICADO",
             estado: "completado"
         }
