@@ -4,7 +4,7 @@ import Banner from './components/Banner/Banner';
 import Perfil from './components/Perfil/Perfil';
 import Habilidades from './components/Habilidades/Habilidades';
 import Proyectos from './components/Proyectos/Proyectos';
-import Contacto from './components/Contactos/Contactos';
+import Contactos from './components/Contactos/Contactos';
 import Servicios from './components/Servicios/Servicios';
 import Certificados from './components/Certificados/Certificados';
 import Footer from './components/Footer/Footer';
@@ -24,7 +24,7 @@ function App() {
       <Perfil />
       <Habilidades />
       <Proyectos  />
-      <Contacto />
+      <Contactos />
       <Servicios />
       <Certificados />
       <Footer />
