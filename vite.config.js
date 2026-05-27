@@ -12,7 +12,7 @@ const isGithubPages = process.env.GITHUB_PAGES === 'true'
 
 export default defineConfig({
 
- base: isGithubPages ? '/portafolio-Villavicencio/' : '/',
+ base: isGithubPages ? '/portafolio-Ramirez/' : '/',
 
  build: {
 
