@@ -2,7 +2,7 @@ import './Proyectos.css';
 import cafe from '../../assets/cafe.png';
 import citas from '../../assets/citas.png';
 import login from '../../assets/LOGIN.png';
-import contacto from '../../assets/contacto.png';
+import cosmico from '../../assets/cosmico.png';
 const Proyectos = () => {
     // Arreglo de proyectos (Simulando una base de datos o API)
     const proyectosData = [
@@ -29,10 +29,10 @@ const Proyectos = () => {
         },
         {
             id: 4,
-            imagen: contacto,
-            titulo: "Contacto", descripcion: "Sistema de contacto", tecnologias: ["HTML5", "CSS3", "JavaScript",  "PHP", "MySQL"],
-            linkDemo: "https://formulario-r.infinityfreeapp.com/",
-            linkCodigo: "https://github.com/johan-vega/entregableGrupo3"
+            imagen: cosmico,
+            titulo: "Linea Cosmica", descripcion: "Tienda en linea", tecnologias: ["HTML5", "CSS", "JavaScript",  "PHP" ],
+            linkDemo: "https://lineacosmica.vercel.app/",
+            linkCodigo: "https://github.com/chavezramirez142006-alt/lineacosmica"
         }
     ];
     return (
